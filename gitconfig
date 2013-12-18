@@ -1,0 +1,8 @@
+[user]
+	name = Josh Beam
+	email = josh@joshbeam.com
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[push]
+	default = simple
