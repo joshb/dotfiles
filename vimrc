@@ -11,3 +11,6 @@ set shiftwidth=4
 
 " ruby tab/indentation settings
 autocmd FileType ruby,eruby set tabstop=2 softtabstop=2 shiftwidth=2
+
+" don't expand tabs in Makefiles
+autocmd FileType make set expandtab!
