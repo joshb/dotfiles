@@ -1,0 +1,41 @@
+#!/bin/sh
+
+YEAR=`date +%Y`
+
+X=' *'
+if [ "$1" == "shell" ]; then
+    X='#'
+else
+    echo '/*'
+fi
+
+cat << EOF
+$X Copyright (C) $YEAR Josh A. Beam
+$X All rights reserved.
+$X
+$X Redistribution and use in source and binary forms, with or without
+$X modification, are permitted provided that the following conditions
+$X are met:
+$X   1. Redistributions of source code must retain the above copyright
+$X      notice, this list of conditions and the following disclaimer.
+$X   2. Redistributions in binary form must reproduce the above copyright
+$X      notice, this list of conditions and the following disclaimer in the
+$X      documentation and/or other materials provided with the distribution.
+$X
+$X THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+$X IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+$X OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+$X IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+$X SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+$X PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+$X OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+$X WHETHER IN CONTACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+$X OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+$X ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+EOF
+
+if [ "$X" == " *" ]; then
+    echo ' */'
+fi
+
+echo
