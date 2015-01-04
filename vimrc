@@ -2,6 +2,7 @@
 syntax on
 set background=dark
 set ruler
+set backspace=2
 
 " general tab/indentation settings
 set expandtab
